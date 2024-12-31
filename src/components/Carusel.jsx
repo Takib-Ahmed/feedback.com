@@ -11,7 +11,7 @@ export function NextArrow(props) {
   const { onClick } = props;
   return (
     <button
-      className='absolute top-1/2 next right-0 transform -translate-y-1/2  p-2 rounded-full  z-10 '
+      className='absolute top-1/2  right-0 transform -translate-y-1/2  p-2 rounded-full  z-10 next '
       onClick={onClick}
     >
 <img src="/Prev&next/next.png" alt=""  className=" w-16"/>
@@ -23,7 +23,7 @@ export function PrevArrow(props) {
   const { onClick } = props;
   return (
     <button
-      className='absolute top-1/2 left-4 prev transform -translate-y-1/2  p-2 rounded-full  z-10 '
+      className='absolute top-1/2 left-4  transform -translate-y-1/2  p-2 rounded-full  z-10 prev'
       onClick={onClick}
     >
      <img src='/Prev&next/prev.png' alt=""  className=" w-16"/>

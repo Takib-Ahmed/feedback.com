@@ -809,7 +809,10 @@ display: none !important;
                                                                       .dots{
                                                                         transform: translateX(-2.5rem) translateY(-30px);
                                                                       }
-                                                                      
+                                                                      .prev{
+                                                                        left: 0 !important;
+                                                                  }
+                                          
                                                                       }
                                                                       @media screen and (max-width: 380px) {
                                                                         .slickslide{
@@ -827,11 +830,11 @@ display: none !important;
                                                                           transform: translateX(-2.5rem) translateY(-30px);
                                                                         }
                                                                         .next{
-                                                                            right: 0;
+                                                                            right: 0 !important;
 
                                                                         }
                                                                         .prev{
-                                                                              left: 0;
+                                                                              left: 0 !important;
                                                                         }
                                                 
                                                                         
