@@ -30,8 +30,8 @@ export default function CategorySection(){
     const [activeCategory, setActiveCategory] = useState("Restaurants");
   const [Hovered,setIshovered] = useState('')
     return (
-        <div className=" flex items-center justify-center bg-white  py-10  h-[4rem]">
-        <div className="mt-[0.5%] flex space-x-6 overflow-x-auto  justify-between w-full px-12  no-scrollbar">
+        <div className=" Catergories flex items-center justify-center bg-white  py-10  h-[4rem]">
+        <div className="mt-[0.5%] flex space-x-6 overflow-x-auto  justify-between w-full px-2 md:px-12  sm:gap-0 gap-4">
           {categories.map((category) => (
             <button 
               key={category.name}
