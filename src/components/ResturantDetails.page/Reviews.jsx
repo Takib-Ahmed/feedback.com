@@ -85,7 +85,7 @@ export default function Reviews({ ListReviews }) {
             <div className=" bg-[#F8F8F8]  p-10  rounded-2xl">
               <div className="Reviewcard flex flex-wrap gap-2">
                 <div className="profile bg-white w-14 h-14 items-center  justify-center flex  rounded-full">
-                  <img src="/public/Detailspage/Vector (10).png" alt="" />
+                  <img src="/Detailspage/Vector (10).png" alt="" />
                 </div>
                 <div className="grid gap-8">
                   <div className="grid gap-4">

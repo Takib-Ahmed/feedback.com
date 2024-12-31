@@ -3,10 +3,10 @@ import { TfiLayoutGrid3Alt } from "react-icons/tfi";
 export default function Photos({setshowphotos}) {
   const Photos = [
     { src: "/Detailspage/Rectangle 1266.png", alt: "Main photo", isMain: true },
-    { src: "/public/Detailspage/Rectangle 1267.png", alt: "Photo 1" },
-    { src: "/public/Detailspage/Rectangle 1268.png", alt: "Photo 2" },
-    { src: "/public/Detailspage/Rectangle 1269.png", alt: "Photo 3" },
-    { src: "/public/Detailspage/Rectangle 1270.png", alt: "Photo 4" },
+    { src: "/Detailspage/Rectangle 1267.png", alt: "Photo 1" },
+    { src: "/Detailspage/Rectangle 1268.png", alt: "Photo 2" },
+    { src: "/Detailspage/Rectangle 1269.png", alt: "Photo 3" },
+    { src: "/Detailspage/Rectangle 1270.png", alt: "Photo 4" },
   ];
 
   return (

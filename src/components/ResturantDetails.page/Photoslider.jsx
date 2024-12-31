@@ -5,12 +5,12 @@ import { RxCross2 } from "react-icons/rx";
 
 export default function Photoslider({ Showphotos, setshowphotos }) {
   const Photos = [
-    { src: "/public/Slider/Group 3783.png", alt: "Main photo", isMain: true },
-    { src: "/public/Slider/Rectangle 1267.png", alt: "Photo 1" },
-    { src: "/public/Slider/Rectangle 1269.png", alt: "Photo 2" },
-    { src: "/public/Slider/Group 3783.png", alt: "Photo 3" },
-    { src: "/public/Slider/Rectangle 1267.png", alt: "Photo 4" },
-    { src: "/public/Slider/Rectangle 1269.png", alt: "Photo 5" },
+    { src: "/Slider/Group 3783.png", alt: "Main photo", isMain: true },
+    { src: "/Slider/Rectangle 1267.png", alt: "Photo 1" },
+    { src: "/Slider/Rectangle 1269.png", alt: "Photo 2" },
+    { src: "/Slider/Group 3783.png", alt: "Photo 3" },
+    { src: "/Slider/Rectangle 1267.png", alt: "Photo 4" },
+    { src: "/Slider/Rectangle 1269.png", alt: "Photo 5" },
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0); // Track the current slide
