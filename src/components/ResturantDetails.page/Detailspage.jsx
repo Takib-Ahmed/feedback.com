@@ -8,6 +8,7 @@ import Overallratings from "./overallraing";
 import Photos from "./Photos";
 import Reviews from "./Reviews";
 import Menu from "./Menu";
+import Photoslider from "./Photoslider";
 
 export default function Detailspage({listdetails,setlistdetails}){
     const [ListReviews,setlistreviews] = useState([{
@@ -82,12 +83,14 @@ export default function Detailspage({listdetails,setlistdetails}){
         
     }])
     const [Showmenu,setshowmenu] = useState(false)
+    const [Showphotos,setshowphotos] = useState(false)
     return (
     <>
        
         <Banner listdetails={listdetails} />
-        <Photos/>
-        <Menu Showmenu={Showmenu}/>
+        <Photos   setshowphotos={setshowphotos}/>
+        <Photoslider Showphotos={Showphotos} setshowphotos={setshowphotos} />
+        <Menu Showmenu={Showmenu} setshowmenu={setshowmenu}/>
         <Moredetails setshowmenu={setshowmenu}/>
         <Overallratings ListReviews={ListReviews}/>
         <Reviews ListReviews={ListReviews}/>

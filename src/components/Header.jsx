@@ -52,7 +52,7 @@ setActiveIndex(-1)}
     <>
       <nav className="flex justify-between items-center px-1 sm:px-6 py-3 shadow-sm bg-white  sticky top-0 w-full z-50" id="top">
         {/* Logo */}
-        <div className="flex items-center">
+     <Link to={'/'}>   <div className="flex items-center">
           <div className=" text-white md:px-2 py-1 rounded-md font-bold text-sm">
             <img
               src="/Header/Logo.png"
@@ -60,7 +60,7 @@ setActiveIndex(-1)}
               className=" lg:w-40 sm:w-32 w-28"
             />
           </div>
-        </div>
+        </div></Link>
 
         {/* Search Bar */}
         <div

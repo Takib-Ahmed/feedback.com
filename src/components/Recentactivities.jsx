@@ -6,6 +6,8 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 
 import { IoMdStar } from "react-icons/io";
 import { NextArrow, PrevArrow } from "./Carusel";
+
+
 export default function Recentsactivities(){
 
     const data = [
@@ -106,6 +108,9 @@ The lorem ipsum is, in printing, a series of meaningless words used temporarily 
         },
       ];
     
+
+
+      
       const subsettings = {
         dots: true,
         infinite: false,
@@ -158,21 +163,21 @@ The lorem ipsum is, in printing, a series of meaningless words used temporarily 
 
 
 
-        <div className="  Title text-3xl   "><p className="px-16 py-10 ">Recents avtivities</p>
-  <div className="flex  justify-center px-12   overflow-hidden">
+        <div className="  Title    "><p className="px-16 py-10 text-3xl">Recents avtivities</p>
+  <div className="flex  justify-center px-0  sm:px-10 sm:pe-14  md:px-12   w-screen">
       
-  <Slider {...subsettings} className="  Recents  p-0 m-0 box-border  rounded-t-lg rounded-xl  overflow-hidden border-none justify-center flex items-center" >
+  <Slider {...subsettings} className=" w-full Recents  p-0 m-0 box-border  rounded-t-lg rounded-xl  overflow-hidden border-none justify-center flex items-center" >
   {data.map((value, index) => (
 
 
 
 <div key={index}>
-<Card className="bg-[#F8F8F8]  w-[26rem]   lg:w-[28.5rem] border-none shadow-lg p-5 lg:pe-10  grid gap-1">
+<div className="bg-[#F8F8F8]  md:w-[26rem]    lg:w-[28.5rem] border-none  p-5 lg:pe-10  grid gap-4 rounded-lg">
   {/* Header Section */}
 
 
   {/* Card Content */}
-  <CardContent>
+  <div>
     <div className="flex items-center gap-2 mb-2 ">
       <div className="rounded-full bg-white w-10 h-10 flex justify-center items-center">  <img
         src="/Recentactivities/Vector (8).png" // Replace with your profile image URL
@@ -181,14 +186,14 @@ The lorem ipsum is, in printing, a series of meaningless words used temporarily 
       /></div>
     
       <div>
-        <CardTitle className=" text-xl">{value.Name}</CardTitle>
+        <div className="  text-xl ">{value.Name}</div>
         <p className="text-sm text-gray-500">{value.location}</p>
       </div>
     </div>
 
     
-  </CardContent>
-  <CardContent className="flex  items-start ps-0 gap-5  ">
+  </div>
+  <div className="flex  items-start ps-0 gap-5  ">
     {/* Rating Stars */}
     <div className="flex gap-1 pt-0.5">
     {Array(5)
@@ -208,10 +213,10 @@ The lorem ipsum is, in printing, a series of meaningless words used temporarily 
     <span className="text-sm font-bold">
     09/11/2023
     </span>
-  </CardContent>
-  <CardDescription  className=' h-28'>{value.description}</CardDescription>
-<br />
-<CardFooter className=' flex items-start ps-0 gap-2'>
+  </div>
+  <div  className=' h-28'>{value.description}</div>
+<br /><br />
+<div className=' flex flex-wrap items-start ps-0 mt-10 sm:pt-0 gap-2'>
 {value.images.map((photoes, i) => (
           <img
             src={photoes} // Replace with your star icon URL
@@ -220,15 +225,15 @@ The lorem ipsum is, in printing, a series of meaningless words used temporarily 
             className=" w-36"
           />
         ))}
-</CardFooter>
-<Slider></Slider>
+</div>
+
 
   <div className="px-4 py-2 ps-0">
     <button className="text-sm text-blue-500 hover:underline">
       Discover
     </button>
   </div>
-</Card>
+</div>
 </div>
 ))} 
         

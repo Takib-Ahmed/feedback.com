@@ -30,10 +30,10 @@ export default function Overallratings({ListReviews}) {
           </div>
           <div className="grid gap-2">
         <div className="flex gap-2"> <div className=" text-x1 flex gap-2"><p>1</p><p>stars</p></div><div className=" w-64 sm:w-72 md:w-96 lg:w-[35rem] h-3 mt-1.5  bg-[#D9D9D9] rounded-full"><div className=" w-[100%] h-3 bg-[#1677BD]   rounded-full"></div></div></div>
-        <div className="flex gap-2"> <div className=" text-x1 flex gap-2"><p>1</p><p>stars</p></div><div className=" w-64 sm:w-72 md:w-96 lg:w-[35rem] h-3 mt-1.5  bg-[#D9D9D9] rounded-full"><div className=" w-[80%] h-3  bg-[#268AD1]  rounded-full"></div></div></div>
-        <div className="flex gap-2"> <div className=" text-x1 flex gap-2"><p>1</p><p>stars</p></div><div className=" w-64 sm:w-72 md:w-96 lg:w-[35rem] h-3 mt-1.5  bg-[#D9D9D9] rounded-full"><div className=" w-[50%] h-3  bg-[#2E95DF]  rounded-full"></div></div></div>
-        <div className="flex gap-2"> <div className=" text-x1 flex gap-2"><p>1</p><p>stars</p></div><div className=" w-64 sm:w-72 md:w-96 lg:w-[35rem] h-3 mt-1.5  bg-[#D9D9D9] rounded-full"><div className=" w-[30%] h-3  bg-[#37A0EB]  rounded-full"></div></div></div>
-        <div className="flex gap-2"> <div className=" text-x1 flex gap-2"><p>1</p><p>stars</p></div><div className=" w-64 sm:w-72 md:w-96 lg:w-[35rem] h-3 mt-1.5  bg-[#D9D9D9] rounded-full"><div className=" w-[10%] h-3  bg-[#3DA6F2]  rounded-full"></div></div></div>
+        <div className="flex gap-2"> <div className=" text-x1 flex gap-2"><p>2</p><p>stars</p></div><div className=" w-64 sm:w-72 md:w-96 lg:w-[35rem] h-3 mt-1.5  bg-[#D9D9D9] rounded-full"><div className=" w-[80%] h-3  bg-[#268AD1]  rounded-full"></div></div></div>
+        <div className="flex gap-2"> <div className=" text-x1 flex gap-2"><p>3</p><p>stars</p></div><div className=" w-64 sm:w-72 md:w-96 lg:w-[35rem] h-3 mt-1.5  bg-[#D9D9D9] rounded-full"><div className=" w-[50%] h-3  bg-[#2E95DF]  rounded-full"></div></div></div>
+        <div className="flex gap-2"> <div className=" text-x1 flex gap-2"><p>4</p><p>stars</p></div><div className=" w-64 sm:w-72 md:w-96 lg:w-[35rem] h-3 mt-1.5  bg-[#D9D9D9] rounded-full"><div className=" w-[30%] h-3  bg-[#37A0EB]  rounded-full"></div></div></div>
+        <div className="flex gap-2"> <div className=" text-x1 flex gap-2"><p>5</p><p>stars</p></div><div className=" w-64 sm:w-72 md:w-96 lg:w-[35rem] h-3 mt-1.5  bg-[#D9D9D9] rounded-full"><div className=" w-[10%] h-3  bg-[#3DA6F2]  rounded-full"></div></div></div>
           </div>
         </div>
    
