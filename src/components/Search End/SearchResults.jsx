@@ -3,7 +3,7 @@ import { Button } from "../ui/button";
 import { BsSortUp,BsSortDown } from "react-icons/bs";
 
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "../ui/card";
-import Slider from "react-slick";
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
