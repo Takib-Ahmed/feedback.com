@@ -803,7 +803,7 @@ display: none !important;
                                                                       .Slider{
                                                                       padding: auto ;
                                                               
-                                                                padding-left: 2.5rem;
+                                                                padding-left: 1rem;
                                                                       }
                                                                       }
                                                                       .dots{
@@ -811,3 +811,28 @@ display: none !important;
                                                                       }
                                                                       
                                                                       }
+                                                                      @media screen and (max-width: 380px) {
+                                                                        .slickslide{
+                                                                     margin: auto 0px;
+                                                                     
+                                                                  padding: auto auto;
+                                                                      
+                                                                        .Slider{
+                                                                        padding: auto ;
+                                                                
+                                                             padding-left: 1rem;
+                                                                        }
+                                                                        }
+                                                                        .dots{
+                                                                          transform: translateX(-2.5rem) translateY(-30px);
+                                                                        }
+                                                                        .next{
+                                                                            right: 0;
+
+                                                                        }
+                                                                        .prev{
+                                                                              left: 0;
+                                                                        }
+                                                
+                                                                        
+                                                                        }
