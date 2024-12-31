@@ -43,7 +43,7 @@ export default function CategorySection(){
             
               <span className="text-2xl">{category.icon=== BeautySpa || category.icon=== Park ? <category.icon  Hovered={activeCategory === category.name  && true} />: <category.icon className={` ${activeCategory === category.name  ? 'text-[#1677BD]':'text-[#AFAFAF]'}` } />}</span>
          
-              <span className="text-sm">{category.name}</span>
+              <span className="text-sm text-nowrap ">{category.name}</span>
           
               {activeCategory === category.name && (
                 <div className="w-full h-[1.5px] bg-blue-600 mt-1"></div>
