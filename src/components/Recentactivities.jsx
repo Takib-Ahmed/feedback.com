@@ -216,7 +216,7 @@ The lorem ipsum is, in printing, a series of meaningless words used temporarily 
   </div>
   <div  className=' h-28'>{value.description}</div>
 <br /><br />
-<div className=' flex flex-wrap items-start ps-0 mt-10 sm:pt-0 gap-2'>
+<div className=' flex flex-wrap sm:flex-nowrap  items-start ps-0 mt-10 sm:pt-0 gap-2'>
 {value.images.map((photoes, i) => (
           <img
             src={photoes} // Replace with your star icon URL
