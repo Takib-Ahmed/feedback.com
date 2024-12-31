@@ -77,7 +77,7 @@ setActiveIndex(-1)}
             value={Searchvalue && Searchvalue}
             type="text"
             placeholder={
-              width < 768 ? "restaurant...." : "restaurant, hotel, service...."
+              width < 768 ? "restaurant.." : "restaurant, hotel, service..."
             }
             className=" searchinputs flex-grow outline-none bg-transparent text-sm placeholder-gray-400 w-24 sm:w-32  md:w-auto "
             onKeyDown={(e)=>{
