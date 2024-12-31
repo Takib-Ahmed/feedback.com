@@ -807,7 +807,7 @@ display: none !important;
                                                                       }
                                                                       }
                                                                       .dots{
-                                                                        transform: translateX(-2.5rem) translateY(-30px);
+                                                                        transform:translateX(-0.5rem)  translateY(-30px);
                                                                       }
                                                                       .prev{
                                                                         left: 0 !important;
@@ -827,7 +827,7 @@ display: none !important;
                                                                         }
                                                                         }
                                                                         .dots{
-                                                                          transform: translateX(-2.5rem) translateY(-30px);
+                                                                          transform: translateX(-0.5rem) translateY(-30px);
                                                                         }
                                                                         .next{
                                                                             right: 0 !important;
