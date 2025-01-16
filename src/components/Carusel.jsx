@@ -202,19 +202,19 @@ const [Resturantslist] = useState([{
       </Slider>
         {/* Navigation Dots */}
        
-      </div> <br />
+      </div> 
 
- <div className=" p-4">
+ <div className="  p-4 py-2">
        {/* Card Content */}
        <div>
-        <div  className='mb-2.5'>{value.Name}</div>
+        <div  className='mb-2.5 text-2xl font-semibold' >{value.Name}</div>
         <div>
       {value.description}
         </div>
       </div>
 
       {/* Footer Section */}
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between pt-4">
         {/* Rating Stars */}
         <div className="flex gap-1 text-yellow-500">
           {Array(5)

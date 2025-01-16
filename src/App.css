@@ -330,3 +330,10 @@ display: none !important;
                                           padding-right: 0.5rem;
                                      }
                                   }
+
+                                  @media screen and (max-width: 400px){
+                                    .Bestrestuarants{
+                                          padding-left: 0.2rem;
+                                          padding-right: 0.2rem;
+                                     }
+                                  }
