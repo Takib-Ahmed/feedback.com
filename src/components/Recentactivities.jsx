@@ -164,80 +164,83 @@ The lorem ipsum is, in printing, a series of meaningless words used temporarily 
 
 
         <div className="  Title    "><p className="px-16 py-10 text-3xl">Recents avtivities</p>
-  <div className="flex  justify-center px-0  sm:px-10 sm:pe-14  md:px-12   w-screen">
+  <div className="flex  justify-center px-0  sm:px-10 sm:pe-14  md:px-12   ">
       
-  <Slider {...subsettings} className=" w-full Recents  p-0 m-0 box-border  rounded-t-lg rounded-xl  overflow-hidden border-none justify-center flex items-center" >
+  <Slider
+  {...subsettings}
+  className=" w-full  Recents  md:p-0 m-0 box-border rounded-t-lg rounded-xl overflow-hidden border-none justify-center flex items-center gap-4" // Add gap between cards
+>
   {data.map((value, index) => (
-
-
-
-<div key={index}>
-<div className="bg-[#F8F8F8]  md:w-[26rem]    lg:w-[28.5rem] border-none  p-5 lg:pe-10  grid gap-4 rounded-lg">
-  {/* Header Section */}
-
-
-  {/* Card Content */}
-  <div>
-    <div className="flex items-center gap-2 mb-2 ">
-      <div className="rounded-full bg-white w-10 h-10 flex justify-center items-center">  <img
-        src="/Recentactivities/Vector (8).png" // Replace with your profile image URL
-        alt="Profile"
-        className="w-5 h-5 "
-      /></div>
-    
-      <div>
-        <div className="  text-xl ">{value.Name}</div>
-        <p className="text-sm text-gray-500">{value.location}</p>
-      </div>
-    </div>
-
-    
-  </div>
-  <div className="flex  items-start ps-0 gap-5  ">
-    {/* Rating Stars */}
-    <div className="flex gap-1 pt-0.5">
-    {Array(5)
-     .fill()
-     .map((_, i) => (
-    
-       <IoMdStar key={i} className=" w-5 h-5 rounded-[2px]  text-white"  style={{
-        background:
-          value.Rating - 1>= i
-            ? '#E8A641' // Fully filled
-            : value.Rating - i > 0
-            ? `linear-gradient(to right, #E8A641 ${Math.round((value.Rating - i) * 100)}%, #9F9F9F ${Math.round(100-(value.Rating - i) * 100)}%)`
-            : '#9F9F9F', // Empty
-      }}/>
-     ))}
+    <div
+      key={index}
+      className="bg-[#F8F8F8] border-none p-5 lg:pe-10 flex flex-col gap-6 rounded-lg w-full h-[30rem]  lg:h-auto overflow-hidden  md:overflow-visible "
+    >
+      {/* Header Section */}
+      <div className="flex items-center gap-2 mb-2   ">
+        <div className="rounded-full bg-white w-10 h-10 flex justify-center items-center">
+          <img
+            src="/Recentactivities/Vector (8).png" // Replace with your profile image URL
+            alt="Profile"
+            className="w-5 h-5"
+          />
         </div>
-    <span className="text-sm font-bold">
-    09/11/2023
-    </span>
-  </div>
-  <div  className=' h-28'>{value.description}</div>
-<br /><br />
-<div className=' flex flex-wrap sm:flex-nowrap  items-start ps-0 mt-10 sm:pt-0 gap-2'>
-{value.images.map((photoes, i) => (
+
+        <div>
+          <div className="text-xl">{value.Name}</div>
+          <p className="text-sm text-gray-500">{value.location}</p>
+        </div>
+      </div>
+
+      {/* Card Content */}
+      <div className="flex items-start ps-0 gap-5 mt-2">
+        {/* Rating Stars */}
+        <div className="flex gap-1 pt-0.5">
+          {Array(5)
+            .fill()
+            .map((_, i) => (
+              <IoMdStar
+                key={i}
+                className="w-5 h-5 rounded-[2px] text-white"
+                style={{
+                  background:
+                    value.Rating - 1 >= i
+                      ? "#E8A641" // Fully filled
+                      : value.Rating - i > 0
+                      ? `linear-gradient(to right, #E8A641 ${Math.round(
+                          (value.Rating - i) * 100
+                        )}%, #9F9F9F ${Math.round(
+                          100 - (value.Rating - i) * 100
+                        )}%)`
+                      : "#9F9F9F", // Empty
+                }}
+              />
+            ))}
+        </div>
+        <span className="text-sm font-bold">09/11/2023</span>
+      </div>
+      <div className=" mt-3 lg:h-40 lg:overflow-hidden">{value.description}</div>
+      <br className="hidden md:block" />
+      
+      <div className="  flex  items-start ps-0 mt-5 sm:pt-0 gap-2">
+        {value.images.map((photoes, i) => (
           <img
             src={photoes} // Replace with your star icon URL
             alt=""
             key={i}
-            className=" w-36"
+            className="w-60 md:w-full"
           />
         ))}
-</div>
+      </div>
 
+      <div className="px-4 py-2 ps-0">
+        <button className="text-sm text-blue-500 hover:underline">
+          Discover
+        </button>
+      </div>
+    </div>
+  ))}
+</Slider>
 
-  <div className="px-4 py-2 ps-0">
-    <button className="text-sm text-blue-500 hover:underline">
-      Discover
-    </button>
-  </div>
-</div>
-</div>
-))} 
-        
-      </Slider>
    
     </div>
         

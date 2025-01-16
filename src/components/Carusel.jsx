@@ -23,7 +23,7 @@ export function PrevArrow(props) {
   const { onClick } = props;
   return (
     <button
-      className='absolute top-1/2 left-4  transform -translate-y-1/2  p-2 rounded-full  z-10 prev'
+      className='absolute top-1/2 left-0  transform -translate-y-1/2  p-2 rounded-full  z-10 prev'
       onClick={onClick}
     >
      <img src='/Prev&next/prev.png' alt=""  className=" w-16"/>
@@ -133,15 +133,15 @@ const [Resturantslist] = useState([{
     prevArrow: <PrevArrow />,
     customPaging: (i) => (
       <div
-        className=" hover:bg-white transition-all duration-300 h-3 w-3  bg-gray-400 rounded-full"
+        className=" hover:bg-white transition-all duration-300 h-3 w-3  bg-gray-400 rounded-full "
         style={{ cursor: "pointer" }}
       >
         {/* Optional: Add index or other content */}
       </div>
     ),
     appendDots: (dots) => (
-    <center className="  justify-center">  <div className=" p-1  z-50  grid items-center justify-center">
-    <ul className="flex justify-center gap-0  pt-10 translate-y-[-25px] items-center  lg:translate-x-[-1.5rem] dots md:translate-x-[-2rem] ">{dots}</ul>
+    <center className="   ">  <div className="   Dots absolute bottom-0 w-full  right-[65%] sm:right-[53%] translate-x-1/2    z-50 items-center translate-y-[-25px]">
+    <center className="flex justify-center gap-0  pt-10     ">{dots}</center>
   </div></center>
     ),
   };
@@ -162,17 +162,17 @@ const [Resturantslist] = useState([{
     ),
     appendDots: (dots) => (
       <div className="p-1">
-        <ul className="flex justify-center gap-0 mx-10  translate-y-[-20px]">{dots}</ul>
+        <ul className="flex justify-center gap-0  translate-y-[-20px]">{dots}</ul>
       </div>
     ),
 
  
   };
   return (
-<div className="  bg-[#1677BD] m-9  rounded-xl relative  items-center overflow-hidden border-none slickslide"> 
+<div className="  bg-[#1677BD]   mx-6 lg:mx-9  rounded-xl relative  items-center overflow-hidden border-none "> 
    <br /><br />
-<center  className=" text-white text-2xl font-bold md:font-normal sm:text-3xl md:text-4xl   md:ps-16 absolute  text-center  lg:px-5  px-10 ">Find the best restaurant ratings below</center><br />
-  <Slider {...settings} className="   lg:p-10   py-16  mt-4  Slider     ">
+<center  className="  text-white text-2xl font-bold md:font-normal sm:text-3xl md:text-4xl    absolute  text-center    px-10 ">Find the best restaurant ratings below</center><br className=" sm:hidden lg:block" />
+  <Slider {...settings} className=" Bestrestuarants  lg:p-10   py-16  mt-4 px-10     ">
 
 
 
@@ -184,17 +184,17 @@ const [Resturantslist] = useState([{
     }));
   
   }}>
-    <div key={index} className="       "> {/* Add margin between slides */}
-    <Card className="w-[20rem]    border-none shadow-lg  lg:mx-5 ">
+  {/* Add margin between slides */}
+    <div key={index} className=" bg-white      border-none shadow-lg   rounded-xl  ">
       {/* Header Section */}
-      <CardHeader className="relative p-0 ">
-      <Slider {...subsettings} className=" p-0 m-0 box-border cardslick-dots rounded-t-lg rounded-xl  overflow-hidden border-none" >
+      <div className="relative p-0  ">
+      <Slider {...subsettings} className="coverimages p-0 m-0 box-border rounded-t-lg rounded-xl  overflow-hidden border-none " >
 
 {value.images.map((srcs,key)=>(
   <img key={key}
           src={srcs} // Replace with your image URL
           alt="Food Display"
-          className="w-full h-56 object-cover rounded-t-lg rounded-xl   bg-transparent"
+          className="w-full h-60 object-cover rounded-t-lg rounded-lg  bg-transparent"
         />
 ))}
       
@@ -202,18 +202,19 @@ const [Resturantslist] = useState([{
       </Slider>
         {/* Navigation Dots */}
        
-      </CardHeader> <br />
+      </div> <br />
 
-      {/* Card Content */}
-      <CardContent>
-        <CardTitle  className='mb-2.5'>{value.Name}</CardTitle>
-        <CardDescription>
+ <div className=" p-4">
+       {/* Card Content */}
+       <div>
+        <div  className='mb-2.5'>{value.Name}</div>
+        <div>
       {value.description}
-        </CardDescription>
-      </CardContent>
+        </div>
+      </div>
 
       {/* Footer Section */}
-      <CardFooter className="flex items-center justify-between">
+      <div className="flex items-center justify-between">
         {/* Rating Stars */}
         <div className="flex gap-1 text-yellow-500">
           {Array(5)
@@ -225,9 +226,10 @@ const [Resturantslist] = useState([{
         <div className="text-sm font-bold">
        {value.Rating} <span className="text-gray-500">{value.Reviews}</span>
         </div>
-      </CardFooter>
-    </Card>
-    </div></Link>
+      </div>
+ </div>
+    </div>
+   </Link>
   ))} 
   </Slider>
   
