@@ -71,9 +71,9 @@ export default function Reviews({ ListReviews }) {
           <div className={` transition-all origin-top duration-300   top-12 absolute left-0 grid gap-1   rounded-lg  shadow-xl text-[#5D5D5D] bg-white ${Sortpopup ? 'w-fit' : 'w-[180px]'} rounded-md duration-300 origin-top border ${Sortpopup ? 'scale-100' : 'scale-0'}`} >
 
 <div className=" grid gap-1   pb-0">
-<p className=" text-nowrap text-left hover:bg-gray-600 px-3 py-2 pe-10" onClick={()=>{setsort(null)}}>Defualt</p>
-<p className=" text-nowrap text-left hover:bg-gray-600 px-3 py-2 pe-10" onClick={()=>{setsort(true)}}>Highest Rated</p>
-<p className=" text-nowrap text-left hover:bg-gray-600 px-3 py-2 pe-10" onClick={()=>{setsort(false)}}>Lowest Rated</p>
+<p className=" text-nowrap text-left hover:bg-gray-600 px-3 py-2 pe-10  hover:text-white" onClick={()=>{setsort(null)}}>Defualt</p>
+<p className=" text-nowrap text-left hover:bg-gray-600 px-3 py-2 pe-10  hover:text-white" onClick={()=>{setsort(true)}}>Highest Rated</p>
+<p className=" text-nowrap text-left hover:bg-gray-600 px-3 py-2 pe-10  hover:text-white" onClick={()=>{setsort(false)}}>Lowest Rated</p>
 
 </div>
           </div>

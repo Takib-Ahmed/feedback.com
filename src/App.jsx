@@ -15,7 +15,7 @@ import Homepage from "./components/Homepage";
 function App() {
   const [Resturantslist] = useState([
     {
-      coverimage: "/Detailspage/Rectangle 28.png",
+      coverimage: "/Trendingcards/Rectangle 22 (1).png",
       images: [
         "/Trendingcards/Rectangle 22 (1).png",
         "/Trendingcards/Rectangle 22 (10).png",

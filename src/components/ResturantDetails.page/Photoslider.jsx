@@ -101,7 +101,7 @@ export default function Photoslider({ Showphotos, setshowphotos }) {
           <img
             src={image.src}
             alt={image.alt}
-            className={`h-[70px] md:h-[80px] lg:h-[100px] w-[200px] ${
+            className={` h-[50px] sm:h-[70px] md:h-[80px] lg:h-[100px] w-[200px] ${
               currentSlide === i
                 ? "border-2  border-sky-500"
                 : "border border-gray-300"
@@ -115,7 +115,7 @@ export default function Photoslider({ Showphotos, setshowphotos }) {
   return (
  <>
  {Showphotos && 
-   <div className="fixed inset-0 flex  items-center justify-center bg-black bg-opacity-50 z-50">   <div className="relative  bg-white p-5 w-[80%] max-w-[1100px]">
+   <div className="fixed inset-0 flex  items-center justify-center bg-black bg-opacity-50 z-50">   <div className="relative  bg-white p-5 w-[90%] lg:w-[80%] max-w-[1100px]">
 
    <Slider {...settings} ref={sliderRef}>
      {Photos.map((image, key) => (
@@ -123,7 +123,7 @@ export default function Photoslider({ Showphotos, setshowphotos }) {
          <img
            src={image.src}
            alt={image.alt}
-           className="w-full h-[250px] md:h-[500px]"
+           className="w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-[500px]"
          />
        </div>
      ))}

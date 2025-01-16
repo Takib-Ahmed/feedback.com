@@ -13,7 +13,7 @@ export default function Banner({listdetails}){
 <div className="    text-white DetailsBanner"  onClick={()=>{
     console.log(listdetails.coverimage)
 }}   style={{
-    background: `url('${listdetails.coverimage}') `,
+    background: `url('${listdetails.Name === 'Bottega' ?'/Detailspage/Rectangle 28.png':listdetails.coverimage}') `,
 
   }}>
    <div className=" dbchild grid gap-10 p-10 sm:p-20"> <h1 className=" text-5xl font-bold">{listdetails.Name}</h1>
