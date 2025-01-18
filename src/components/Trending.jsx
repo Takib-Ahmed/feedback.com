@@ -61,7 +61,7 @@ export default function Trending({Resturantslist,Searchvalue,setlistdetails}){
   <img key={key}
           src={srcs} // Replace with your image URL
           alt="Food Display"
-          className="w-full h-56 object-cover rounded-t-lg rounded-xl   bg-transparent"
+          className="w-full h-56 object-cover   bg-transparent"
         />
 ))}
       

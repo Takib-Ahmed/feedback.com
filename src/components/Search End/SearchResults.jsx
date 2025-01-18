@@ -37,7 +37,7 @@ export default function Searchrestults({ Resturantslist, Filtervalue, setlistdet
                   Sortpopup ? "scale-100 w-[180px]" : "scale-0 w-max"
                 }`}
               >
-                <div className="grid gap-1 pb-0">
+                <div className="grid gap-1 pb-0 z-10">
                   <p
                     className="text-left hover:bg-gray-600 px-3 py-2 cursor-pointer hover:text-white"
                     onClick={() => setSort(null)}

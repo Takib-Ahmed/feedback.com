@@ -194,7 +194,7 @@ const [Resturantslist] = useState([{
   <img key={key}
           src={srcs} // Replace with your image URL
           alt="Food Display"
-          className="w-full h-60 object-cover rounded-t-lg rounded-lg  bg-transparent"
+          className="w-full h-60 object-cover   bg-transparent"
         />
 ))}
       
