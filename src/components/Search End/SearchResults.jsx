@@ -116,7 +116,7 @@ export default function Searchrestults({ Resturantslist, Filtervalue, setlistdet
       </div>
       <div className="map h-[80rem] flex justify-end">
         <img
-          src="/public/Searchrestult/Group 178.png"
+          src="/Searchrestult/Group 178.png"
           alt=""
           className="w-full"
         />
